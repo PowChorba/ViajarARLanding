@@ -1,0 +1,50 @@
+.container {
+    background-image: url('../../assets/ruta.svg');
+    background-position: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: red; */
+}
+
+
+.content{
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 75px 0px;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 500px;
+}
+
+.textContainer > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textContainer > div > p {
+    color: rgba(0, 0, 0, 0.70);
+    font-weight: 400;
+    font-size: 20px;
+    text-align: left;
+}
+
+.titleBell {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.titleBell > h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
