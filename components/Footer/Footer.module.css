@@ -1,0 +1,28 @@
+.container {
+    background-color:#0C101B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    padding: 75px 0px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+}
+
+.content > h4 {
+    color: #56BBF1; 
+    font-size: 25.73px;
+    font-weight: 600;
+    line-height: 22.98px;
+}
+
+.content > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

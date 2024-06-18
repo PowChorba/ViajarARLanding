@@ -1,13 +1,14 @@
 import Image from 'next/image'
 import s from './Details.module.css'
-import DetailOne from '../../assets/detalle_1.svg'
-import Bell from '../../assets/campana.svg'
+import DetailOne from '../../assets/detalle_1.webp'
+import Bell from '../../assets/campana.webp'
 
 export default function Details(){
     return(
         <section className={s.container}>
+                <Image src={DetailOne} alt='Buscar viaje' width={500} height={750} className={s.displayNone}/>
             <article className={s.content}>
-                <Image src={DetailOne} alt='Buscar viaje' width={550} height={550}/>
+                <Image src={DetailOne} alt='Buscar viaje' width={500} height={750} className={s.phoneDetail}/>
                 <div className={s.textContainer}>
                     <div>
                         <div className={s.titleBell}>
@@ -42,7 +43,7 @@ export default function Details(){
                         <p>En ViajAR, valoramos conocer a nuestros usuarios. Revisamos cuidadosamente las opiniones y perfiles de cada uno para que sepas con quién vas a compartir tu viaje. Podes reservar tu próximo trayecto con total seguridad y tranquilidad.</p>
                     </div>
                 </div>
-                <Image src={DetailOne} alt='Buscar viaje' width={750} height={750}/>
+                <Image src={DetailOne} alt='Buscar viaje' width={500} height={750} className={s.phoneDetail}/>
             </article>
             <article>
                 

@@ -4,7 +4,6 @@
     background-position: right center;
     background-color: #D9D9D91A;
     padding: 0px;
-    height: 100vh
 
 
 }
@@ -53,4 +52,49 @@
     text-align: center;
     background: #56BBF1;
     color: #F3FBFD;
+}
+
+@media (max-width: 600px) { 
+    .container {
+        background-image:url('../../assets/fondo-responsive.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        background-color: #D9D9D91A;
+        /* background-color: red; */
+        height: 50vh
+    }
+   
+    .phoneHero {
+        width: 500px;
+        height: 250px;
+    } 
+
+    .titleHero {
+        width: 200px;
+        /* height: 100px; */
+        gap: 10px;
+    }
+
+    .titleHero > h2 {
+        font-size: 20px;
+    }
+
+    .titleHero > p {
+        font-size: 14px;
+    }
+
+    .titleHero > button {
+        width: 115px;
+        padding: 10px;
+        gap: 0px;
+        border-radius: 25.35px;
+        border: none;
+        font-size: 10px;
+        font-weight: 700;
+        line-height: 20px;
+        text-align: center;
+        background: #56BBF1;
+        color: #F3FBFD;
+    }
+
 }

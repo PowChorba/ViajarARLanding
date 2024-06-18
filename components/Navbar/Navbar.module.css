@@ -27,3 +27,24 @@
     border: none;
     border-radius: 35px;
 }
+
+@media (max-width: 600px) { 
+    .container {
+        padding: 10px 0px;
+    }
+
+    .imgReponsive {
+        width: 100px;
+        height: 50px;
+    }
+
+    .links {
+        display: none;
+    }
+
+    .button {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+}

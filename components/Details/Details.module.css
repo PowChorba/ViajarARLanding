@@ -1,18 +1,22 @@
 .container {
-    background-image: url('../../assets/ruta.svg');
-    background-position: left;
-    background-size: cover;
+    /* background-image: url('../../assets/ruta.webp');
+    background-position: center;
     background-repeat: no-repeat;
-    /* background-color: red; */
+    gap: 20px; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* width: 100%; */
 }
 
 
 .content{
-    margin: 0px auto;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding: 75px 0px;
+    /* padding: 75px 0px; */
+
 }
 
 .textContainer {
@@ -20,7 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
     width: 500px;
 }
 
@@ -33,7 +37,7 @@
 .textContainer > div > p {
     color: rgba(0, 0, 0, 0.70);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
 }
 
@@ -45,6 +49,50 @@
 }
 
 .titleBell > h3 {
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
+}
+
+.displayNone {
+    display: none;
+}
+
+@media (max-width: 600px) { 
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        gap: 30px;
+    }
+    
+    .phoneDetail {
+        display: none;
+    }
+
+    .displayNone {
+        display: block;
+    }
+
+    .content{
+        flex-direction: column;
+        width: 100%;
+        /* padding: 75px 0px; */
+    }
+
+    .textContainer{
+        width: 100%;
+        gap: 30px;
+    }
+
+    .titleBell > h3 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .titleBell > img {
+        width: 30px;
+        height: 30px;
+    }
 }

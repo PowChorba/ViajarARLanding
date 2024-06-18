@@ -1,0 +1,71 @@
+.container {
+    width: 85%;
+    margin: 100px auto;
+    padding: 75px 125px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    background: linear-gradient(272.15deg, #E7F7FD -2.93%, rgba(86, 187, 241, 0.3) 173.85%);
+    border-radius: 20px;
+    border: 1px solid;
+    border-image-source: linear-gradient(262.04deg, #FFFFFF -11.08%, #FFFFFF 105.62%);
+    box-shadow: 2px 4px 30px 0px #5B5B5B26;
+
+}
+
+.title {
+    font-size: 44.9px;
+    font-weight: 600;
+    line-height: 43.65px;
+    text-align: left;
+}
+
+.title > span {
+    color: #56BBF1;
+}
+
+
+.subTitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 35px;
+    text-align: left;
+    padding: 20px 0px;
+
+}
+
+.subTitle > strong {
+    color: #56BBF1;
+}
+
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.checkbox {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+.checkbox > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.checkbox > input {
+    color: #56BBF1;
+}
+
+.button {
+    background: #56BBF1;
+    box-shadow: 24.94px 37.42px 62.36px 0px #4793FF1A;
+    margin-top: 15px;
+}
