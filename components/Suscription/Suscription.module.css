@@ -13,7 +13,7 @@
 }
 
 .title {
-    font-size: 44.9px;
+    font-size: 2.813rem;
     font-weight: 600;
     line-height: 43.65px;
     text-align: left;
@@ -25,7 +25,7 @@
 
 
 .subTitle {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     line-height: 35px;
     text-align: left;
@@ -55,7 +55,7 @@
 }
 
 .checkbox > p {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 35px;
 }
@@ -68,4 +68,42 @@
     background: #56BBF1;
     box-shadow: 24.94px 37.42px 62.36px 0px #4793FF1A;
     margin-top: 15px;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        margin: 50px auto;
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .title {
+        font-size: 1.625rem;
+        text-align: center;
+    }
+
+    .subTitle {
+        font-size: 1.125rem;
+        text-align: center;
+        padding: 10px 0px;
+    
+    }
+
+    .input {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0px;
+    }
+
+    .checkbox > p {
+        font-size: 0.625rem;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .button {
+        width: 100%;
+    }
 }

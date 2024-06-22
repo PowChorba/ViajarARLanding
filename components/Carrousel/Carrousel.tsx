@@ -25,7 +25,7 @@ function SampleNextArrow(props: any) {
   return (
     <MdOutlineKeyboardArrowRight
       className={className}
-      style={{ ...style, display: "block", backgroundColor: "transparent", color: '#56BBF1' , width: '50px', height: '50px'}}
+      style={{ ...style, display: "block", backgroundColor: "transparent", color: '#56BBF1' , width: '50px', height: '50px', marginRight: '10px'}}
       onClick={onClick}
     />
   );
@@ -36,7 +36,7 @@ function SamplePrevArrow(props: any) {
   return (
     <MdOutlineKeyboardArrowLeft
       className={className}
-      style={{ ...style, display: "block", backgroundColor: "transparent", color: '#56BBF1', width: '50px', height: '50px' }}
+      style={{ ...style, display: "block", backgroundColor: "transparent", color: '#56BBF1', width: '50px', height: '50px', marginLeft: '10px' }}
       onClick={onClick}
     />
   );
@@ -59,8 +59,8 @@ export default function Carrousel() {
     speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />
   };
 
   return (

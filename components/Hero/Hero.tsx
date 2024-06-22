@@ -8,6 +8,9 @@ export default function Hero(){
         <section className={s.container}>
             <Navbar/>
             <div className={s.content}>
+                <div className={s.displayNone}>
+                        <Image src={Phone} alt='Telefono' width={760} height={760} className={s.phoneHero}/>
+                </div>
                 <div className={s.titleHero}>
                     <h2>Una nueva forma de <strong>ViajAR</strong></h2>
                     <p>Conectá con conductores y pasajeros para compartir viajes de manera segura,  económica y conveniente.</p>

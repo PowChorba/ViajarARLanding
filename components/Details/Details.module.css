@@ -37,7 +37,7 @@
 .textContainer > div > p {
     color: rgba(0, 0, 0, 0.70);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: left;
 }
 
@@ -49,12 +49,18 @@
 }
 
 .titleBell > h3 {
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 700;
 }
 
 .displayNone {
     display: none;
+}
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 25px;
+    }
 }
 
 @media (max-width: 600px) { 
@@ -71,9 +77,9 @@
         display: none;
     }
 
-    .displayNone {
+    /* .displayNone {
         display: block;
-    }
+    } */
 
     .content{
         flex-direction: column;
@@ -87,7 +93,7 @@
     }
 
     .titleBell > h3 {
-        font-size: 20px;
+        font-size: 1.25rem;
         font-weight: 700;
     }
 

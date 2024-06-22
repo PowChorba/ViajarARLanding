@@ -16,7 +16,7 @@
 
 .content > h4 {
     color: #56BBF1; 
-    font-size: 25.73px;
+    font-size: 1.563rem;
     font-weight: 600;
     line-height: 22.98px;
 }
@@ -25,4 +25,15 @@
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        gap: 25px;
+        overflow: hidden;
+    }
+    .logo {
+        width: 150px;
+        /* height: 200px; */
+    }
 }

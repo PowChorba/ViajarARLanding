@@ -8,14 +8,14 @@
 }
 
 .titles > p {
-    font-size: 25px;
+    font-size: 1.563rem;
     font-weight: 400;
     letter-spacing: 0.16em;
     color: #56BBF1;
 }
 
 .titles > h2 {
-    font-size: 55px;
+    font-size: 3.438rem;
     font-weight: 700;
     line-height: 60px;
     /* box-shadow: 0px 24.14px 48.28px 0px #0000001A; */
@@ -60,7 +60,7 @@
 }
 
 .faqHeaderH5 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     color: #384347;
 }
@@ -89,6 +89,8 @@
 @media (max-width: 600px) { 
     .container {
         width: 95%;
+        padding: 25px 0px;
+        overflow-x: hidden;
     }
     .content {
         grid-template-columns: 1fr;
@@ -97,11 +99,33 @@
 
     .titles > h2 {
         text-align: center;
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .titles > p {
         text-align: center;
+    }
+
+    .faqItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100px;
+        border: 1px solid #384347;
+        border-radius: 10px;
+        padding: 20px;
+        opacity: 88%;
+        overflow: hidden;
+    }
+
+    .faqHeaderH5 {
+        font-size: 0.875rem;
+    }
+
+    .iconFaq {
+        width: 20px;
+        height: 20px;
     }
 }
 
