@@ -63,7 +63,7 @@ export default function Suscription(){
     }
 
     return(
-        <section className={s.container}>
+        <form className={s.container}>
             <h2 className={s.title}>Sé el primero en enterarte del <span>lanzamiento</span></h2>
             <h5 className={s.subTitle}>Suscribite a nuestra lista de espera y recibí notificaciones inmediatas en cuanto la App esté disponible. <strong>¡No te pierdas ninguna novedad!</strong></h5>
             <div className={s.input}>
@@ -97,5 +97,5 @@ export default function Suscription(){
             </div>
             <Button color="primary" size="lg" endContent={arrowIcon()} className={s.button} onClick={() => handelSubmit()}>Suscribirse</Button>
             {/* <ModalSub/> */}
-        </section>)
+        </form>)
 }
