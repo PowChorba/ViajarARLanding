@@ -14,14 +14,14 @@ export default function Home() {
   return (
     <>
       <main className={s.container}>
-      <Hero/>
-      <Details/>
-      <Carrousel/>
-      <Benefits/>
-      <Faq/>
-      <Suscription/>
-    </main>
-    <Footer/>
+        <Hero/>
+        <Details/>
+        <Carrousel/>
+        <Benefits/>
+        <Faq/>
+        <Suscription/>
+      </main>
+      <Footer/>
     </>
   );
 }

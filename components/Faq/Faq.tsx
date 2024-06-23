@@ -11,7 +11,7 @@ export default function Faq() {
 
     const iconArrow = () => { return <Image src={ARROW} alt='arrow' width={30} height={30} className={s.iconFaq}/>}
     const iconPlus = () => { return <Image src={PLUS} alt='arrow' width={30} height={30} className={s.iconFaq}/>}
-    const title = (index: number) => { return <h5 className={s.faqHeaderH5}>{faqs[index].question}</h5>}
+    const title = (index: number) => { return <h4 className={s.faqHeaderH5}>{faqs[index].question}</h4>}
 
     const faqs = [
         { question: '¿Qué es ViajAR App?', answer: 'ViajAR App es una aplicación en desarrollo que busca facilitar el carpooling, es decir, compartir viajes en automóvil con otras personas que comparten rutas similares.' },
