@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import "./globals.css";
 import { Providers } from "./providers";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Open_Sans({ subsets: ["latin"] });
 
@@ -18,9 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* <meta name="viewport" content="width=device-width, initial-scale=1.0"/> */}
-      <body className={inter.className}><Providers>
+      <body className={inter.className}>
+        <Providers>
           {children}
-        </Providers></body>
+          <SpeedInsights/>
+        </Providers>
+      </body>
     </html>
   );
 }
