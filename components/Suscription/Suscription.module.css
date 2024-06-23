@@ -70,8 +70,28 @@
     margin-top: 15px;
 }
 
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    .container {
+        width: 90%;
+        margin: 50px auto;
+        padding: 50px;    
+    }
+}
 
-@media (max-width: 600px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 95%;
+        margin: 50px auto;
+        padding: 25px;
+        overflow-x: hidden;
+    }
+
+    .subTitle {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 767px) {
     .container {
         width: 95%;
         margin: 50px auto;
@@ -85,10 +105,10 @@
     }
 
     .subTitle {
-        font-size: 1.125rem;
+        font-size: 0.8rem;
         text-align: center;
         padding: 10px 0px;
-    
+        line-height: 20px;
     }
 
     .input {

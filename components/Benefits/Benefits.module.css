@@ -36,14 +36,14 @@
     color: #56BBF1;
     font-size: 1.5rem;
     font-weight: 700;
-    line-height: 30.9px;
+    line-height: 25px;
     text-align: center;
 }
 
 .description {
     font-size: 1.25rem;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
     letter-spacing: 0.005em;
     text-align: center;
 }
@@ -60,7 +60,7 @@
         /* font-family: Open Sans Hebrew; */
         font-size: 2.813rem;
         font-weight: 700;
-        line-height: 45spx;
+        line-height: 45px;
         text-align: left;
         padding: 20px 0px;
     }
@@ -82,13 +82,41 @@
         padding: 15px;
     
     }
+
+    .icon {
+        width: 60px;
+        height: 60px;
+    }
 }
 
-@media (max-width: 600px) { 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
-        width: 95%;
+        width: 100%;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .content > div {
+        padding: 15px;
+    }
+
+    .icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 767px) { 
+    .container {
+        width: 100%;
         overflow-x: hidden;
-        margin: 25px auto;
+        margin: 0px auto;
     }
 
     .content {

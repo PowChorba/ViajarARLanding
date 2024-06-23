@@ -9,7 +9,7 @@ export default function Hero(){
             <Navbar/>
             <div className={s.content}>
                 <div className={s.displayNone}>
-                        <Image src={Phone} alt='Telefono' width={760} height={760} className={s.phoneHero}/>
+                        <Image src={Phone} alt='Telefono' width={760} height={760} className={s.phoneHero} loading="eager"/>
                 </div>
                 <div className={s.titleHero}>
                     <h2>Una nueva forma de <strong>ViajAR</strong></h2>
@@ -17,7 +17,7 @@ export default function Hero(){
                     <button>Suscribirme</button>
                 </div>
                 <div className={s.imageHero}>
-                    <Image src={Phone} alt='Telefono' width={760} height={760} className={s.phoneHero}/>
+                    <Image src={Phone} alt='Telefono' width={760} height={760} className={s.phoneHero} loading="eager"/>
                 </div>
             </div>
         </section>)

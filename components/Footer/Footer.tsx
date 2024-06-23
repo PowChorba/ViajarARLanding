@@ -1,8 +1,9 @@
 import Image from "next/image";
 import LOGO from '../../assets/viajar.svg'
-import PHONE from '../../assets/phone.webp'
+import PHONE from '../../assets/instagram.svg'
 import MAIL from '../../assets/mail.webp'
 import s from './Footer.module.css'
+import Link from "next/link";
 
 export default function Footer(){
     return(
@@ -12,11 +13,11 @@ export default function Footer(){
                 <h4>Contacto</h4>
                 <div>
                     <Image src={PHONE} alt='Icono telefono' width={30} height={30}/>
-                    <p>+54 11 1234 5678</p>
+                    <Link href='https://www.instagram.com/viajar_app/' target="_onblank">ViajarAR_app</Link>
                 </div>
                 <div>
                     <Image src={MAIL} alt='Icono telefono' width={30} height={30}/>
-                    <p>info@viajar.com</p>
+                    <Link href='mailto:info@viajarapp.com'>info@viajar.com</Link>
                 </div>
                 {/* <p>&copy; 2024 Viajar - Todos los derechos reservados</p> */}
             </div>

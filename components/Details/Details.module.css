@@ -28,13 +28,23 @@
     width: 500px;
 }
 
-.textContainer > div {
+.textContainerTwo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+    gap: 20px;
+    width: 500px;
+}
+
+.textContainer > div, .textContainerTwo > div {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.textContainer > div > p {
+.textContainer > div > p, .textContainerTwo > div > p {
     color: rgba(0, 0, 0, 0.70);
     font-weight: 400;
     font-size: 1.125rem;
@@ -63,23 +73,56 @@
     }
 }
 
-@media (max-width: 600px) { 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
     .container{
+        width: 95%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .phoneDetail{
+        width: 400px;
+        height: 500px;
+    }
+
+    .titleBell > h3 {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .textContainer > div > p, .textContainerTwo > div > p {
+        color: rgba(0, 0, 0, 0.70);
+        font-weight: 400;
+        font-size: .8rem;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) { 
+    .container{
+        width: 95%;
+        text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         padding: 15px;
         gap: 30px;
+        text-align: left;
     }
     
     .phoneDetail {
         display: none;
     }
 
-    /* .displayNone {
-        display: block;
-    } */
+    .textContainerTwo {
+        display: none;
+    }
 
     .content{
         flex-direction: column;
