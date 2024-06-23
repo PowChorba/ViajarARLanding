@@ -4,7 +4,8 @@
     padding: 75px 125px;
     border: 1px 0px 0px 0px;
     opacity: 0px;
-    background: linear-gradient(272.15deg, #E7F7FD -2.93%, rgba(86, 187, 241, 0.3) 173.85%);
+    /* background: linear-gradient(272.15deg, #E7F7FD -2.93%, rgba(86, 187, 241, 0.3) 173.85%); */
+    background-color: red;
     border-radius: 20px;
     border: 1px solid;
     border-image-source: linear-gradient(262.04deg, #FFFFFF -11.08%, #FFFFFF 105.62%);
