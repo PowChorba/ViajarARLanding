@@ -18,8 +18,8 @@ export default function Home() {
         <Details/>
         <Carrousel/>
         <Benefits/>
-        <Faq/>
         <Suscription/>
+        <Faq/>
       </main>
       <Footer/>
     </>

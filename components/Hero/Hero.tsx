@@ -15,7 +15,7 @@ export default function Hero(){
                 </div>
                 <div className={s.imageHero}>
                     <Image src={Phone} alt='Telefono' width={760} height={760} className={s.phoneHero} loading="eager"/>
-                    <video controls width="100%" className={s.image} poster="caratula.JPG"><source src="video-proximamente.mp4" type="video/mp4"/></video> 
+                    <video controls className={s.image} poster="caratula.JPG"><source src="video-proximamente.mp4" type="video/mp4"/></video> 
                 </div>
             </div>
         </section>)
