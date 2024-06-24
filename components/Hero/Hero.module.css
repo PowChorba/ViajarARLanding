@@ -141,10 +141,11 @@
         margin-top: 50px;
         grid-template-columns: 1fr;
         gap: 25px;
+        width: 95%;
     }
 
     .titleHero {
-        width: 100%;
+        width: 95%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -194,7 +195,8 @@
     .imageHero {
         height: 250px;
         width: 350px;
-        margin: 0px auto;
+        /* width: 95%; */
+        margin: 25px auto;
 
     }
 
