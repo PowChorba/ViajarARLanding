@@ -9,7 +9,7 @@ import Image from 'next/image'
 
 export default function Benefits(){
     return(
-        <section className={s.container}>
+        <section id='benefits' className={s.container}>
             <h2 className={s.mainTitle}>Beneficios de ViajAR</h2>
             <article className={s.content}>
                 <div>

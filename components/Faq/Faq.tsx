@@ -23,7 +23,7 @@ export default function Faq() {
     ];
 
     return (
-        <section className={s.container}>
+        <section id='faq' className={s.container}>
             <div className={s.titles}>
                 <p>FAQ</p>
                 <h2>Preguntas <strong>Frecuentes</strong></h2>

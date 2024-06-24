@@ -63,7 +63,7 @@ export default function Suscription(){
     }
 
     return(
-        <form className={s.container}>
+        <form id="suscribirse" className={s.container}>
             <h2 className={s.title}>Sé el primero en enterarte del <span>lanzamiento</span></h2>
             <h5 className={s.subTitle}>Suscribite a nuestra lista de espera y recibí notificaciones inmediatas en cuanto la App esté disponible. <strong>¡No te pierdas ninguna novedad!</strong></h5>
             <div className={s.input}>

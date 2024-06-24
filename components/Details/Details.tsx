@@ -5,7 +5,7 @@ import Bell from '../../assets/campana.webp'
 
 export default function Details(){
     return(
-        <section className={s.container}>
+        <section id='details' className={s.container}>
             <article className={s.content}>
                 <Image src={DetailOne} alt='Buscar viaje' width={500} height={750} className={s.phoneDetail}/>
                 <div className={s.textContainer}>
