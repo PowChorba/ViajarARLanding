@@ -144,7 +144,7 @@
     }
 
     .titleHero {
-        width: 100%;
+        width: 90%;
         /* height: 100px; */
         display: flex;
         flex-direction: column;
@@ -155,15 +155,23 @@
     }
 
     .titleHero > h1 {
-        font-size: 1.875rem;
+        font-size: 1.7rem;
+        text-align: left;
+        width: 250px;
+        /* width: 100%; */
+        margin-right: auto;
     }
 
+    
     .titleHero > h1 > strong {
         color: rgba(86, 187, 241, 1);
     }
-
+    
     .titleHero > p {
         font-size: 0.875rem;
+        text-align: left;
+        width: 350px;
+        margin-right: auto;
     }
 
     .titleHero > button {
@@ -207,12 +215,28 @@
         margin: 35px auto;
     }
 
+
+    .titleHero > h1 {
+        font-size: 1.5rem;
+        text-align: left;
+        width: 200px;
+        /* width: 100%; */
+        margin-right: auto;
+    }
+
+    .titleHero > p {
+        font-size: 0.875rem;
+        text-align: left;
+        width: 350px;
+        margin-right: auto;
+    }
+
     .phoneHero {
         display: none;
     }
 
     .imageHero {
-        margin: 35px auto;
+        margin: 15px auto;
     }
 
     .image {
