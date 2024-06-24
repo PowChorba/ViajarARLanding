@@ -144,7 +144,8 @@
     }
 
     .titleHero {
-        width: 90%;
+        width: 100%;
+        padding: 0px 10px;
         /* height: 100px; */
         display: flex;
         flex-direction: column;
@@ -186,6 +187,7 @@
         text-align: center;
         background: #56BBF1;
         color: #F3FBFD;
+        margin-right: auto;
     }
 
     .phoneHero {
