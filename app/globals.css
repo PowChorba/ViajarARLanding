@@ -22,6 +22,15 @@
   margin: 0;
 }
 
+*::-webkit-scrollbar{
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb{
+  background-color: #56BBF1;
+  border-radius: 5px;
+}
+
 
 
 
