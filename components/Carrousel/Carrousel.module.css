@@ -1,5 +1,7 @@
 .container {
-    height: 65vh;
+  height: 100%;
+  width: 100%;
+  padding: 50px 0px;
     overflow-x: hidden;
 }
 
@@ -14,12 +16,12 @@
   display: block;
   margin: 0px auto; 
 }
-
+/* 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .container {
-    height: 100vh;
+    height: 100%;
   }
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .container {
