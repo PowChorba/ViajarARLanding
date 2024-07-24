@@ -1,9 +1,10 @@
 import Image from "next/image";
 import LOGO from '../../assets/viajar.svg'
-import PHONE from '../../assets/instagram.svg'
-import MAIL from '../../assets/mail.webp'
 import s from './Footer.module.css'
 import Link from "next/link";
+import { FaInstagram } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
+import { AiFillTikTok } from "react-icons/ai";
 
 export default function Footer(){
     return(
@@ -12,12 +13,16 @@ export default function Footer(){
             <div className={s.content}>
                 <h4>Contacto</h4>
                 <div>
-                    <Image src={PHONE} alt='Icono telefono' width={30} height={30}/>
-                    <Link href='https://www.instagram.com/viajar_app/' target="_onblank">ViajarAR_app</Link>
+                <FaInstagram color="#56BBF1" size={20}/>
+                    <Link href='https://www.instagram.com/viajar_app/' target="_onblank">Viajar_app</Link>
                 </div>
                 <div>
-                    <Image src={MAIL} alt='Icono telefono' width={30} height={30}/>
-                    <Link href='mailto:info@viajarapp.com'>info@viajar.com</Link>
+                <AiFillTikTok color="#56BBF1" size={20}/>
+                <Link href='https://www.tiktok.com/@viajar_app' target="_onblank">Viajar_app</Link>
+                </div>
+                <div>
+                <IoMailOutline color="#56BBF1" size={20}/>
+                    <Link href='mailto:info@viajarapp.com'>info@viajarapp.com</Link>
                 </div>
                 {/* <p>&copy; 2024 Viajar - Todos los derechos reservados</p> */}
             </div>
