@@ -7,7 +7,8 @@ import Image from "next/image";
 import s from './Suscription.module.css'
 import { useState } from "react";
 import { newSubscriber } from "./helper/helper";
-import ModalSub from "./helper/Modal";
+import { ToastContainer, toast, Slide } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 
 
 export function validate(input: string) {
@@ -37,6 +38,48 @@ export default function Suscription(){
         })
     }
 
+    function showNotification() {
+        toast.error('Ese email ya esta registrado', {
+            position: "bottom-left",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Slide,
+            });
+      }
+
+    const showSucces = () => {
+        toast.success('Gracias por formar parte de ViajAR!', {
+            position: "bottom-left",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Slide,
+            });
+    }  
+
+    const showTerms = () => {
+        toast.warn('Debes aceptar los terminos y condiciones', {
+            position: "bottom-left",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Slide,
+            });
+    } 
+
     const handelSubmit = async () => {
         const validatee = validate(user.email)
         if(validatee === 'error'){
@@ -47,13 +90,15 @@ export default function Suscription(){
         if(terms && validatee !== 'error'){
             const submit = await newSubscriber(user)
             if(submit.status === 'success'){
-                alert('Gracias por suscribirte!')
+                showSucces()
                 setUser({fullName: '', email: ''})
                 setAlerts(true)
                 setAlerts(false)
             }else{
-                alert('El email ya esta subscrito')
+                showNotification()
             }
+        }else if(!terms) {
+            showTerms()
         }
         
     }
@@ -64,6 +109,7 @@ export default function Suscription(){
 
     return(
         <form id="suscribirse" className={s.container}>
+            <ToastContainer />
             <h2 className={s.title}>Sé el primero en enterarte del <span>lanzamiento</span></h2>
             <h5 className={s.subTitle}>Suscribite a nuestra lista de espera y recibí notificaciones inmediatas en cuanto la App esté disponible. <strong>¡No te pierdas ninguna novedad!</strong></h5>
             <div className={s.input}>
