@@ -13,11 +13,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 const images = [
-  { src: CarrouselUno, alt: 'Carrousel uno' },
+  { src: CarrouselUno, alt: 'Carrousel cinco' },
   { src: CarrouselDos, alt: 'Carrousel dos' },
   { src: CarrouselTres, alt: 'Carrousel tres' },
   { src: CarrouselCuatro, alt: 'Carrousel cuatro' },
-  { src: CarrouselCinco, alt: 'Carrousel cinco' }
+  { src: CarrouselCinco, alt: 'Carrousel uno' }
 ];
 
 function SampleNextArrow(props: any) {
@@ -36,7 +36,7 @@ function SamplePrevArrow(props: any) {
   return (
     <MdOutlineKeyboardArrowLeft
       className={className}
-      style={{ ...style, display: "block", backgroundColor: "transparent", color: '#56BBF1', width: '50px', height: '50px', marginLeft: '10px' }}
+      style={{ ...style, display: "block", backgroundColor: "transparent", color: '#56BBF1', width: '50px', height: '50px', marginLeft: '10px'}}
       onClick={onClick}
     />
   );
@@ -45,14 +45,14 @@ function SamplePrevArrow(props: any) {
 export default function Carrousel() {
 
   const settings = {
-    customPaging: function(i: any) {
-      return (
-        // <a>
+    // customPaging: function(i: any) {
+    //   return (
+    //     // <a>
           
-          <Image src={images[i].src} alt={images[i].alt} width={100} height={100}/>
-        // </a>
-      );
-    },
+    //       <Image src={images[i].src} alt={images[i].alt} width={100} height={100}/>
+    //     // </a>
+    //   );
+    // },
     dots: true,
     dotsClass: "slick-dots slick-thumb",
     infinite: true,
