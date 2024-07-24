@@ -11,7 +11,7 @@ export default function Hero(){
             <div className={s.content}>
                 <div className={s.titleHero}>
                     <h1>Una nueva forma de <strong>ViajAR</strong></h1>
-                    <p>Conectá con conductores y pasajeros para compartir viajes de manera segura,  económica y conveniente.</p>
+                    <p>Conectá con conductores y pasajeros que viajen en tu misma dirección para compartir viajes de manera segura, económica y conveniente.</p>
                     <button><Link href='#suscribirse'>Suscribirme</Link></button>
                 </div>
                 <div className={s.imageHero}>
