@@ -1,16 +1,14 @@
 'use client'
-import { useState } from 'react'
 import s from './Faq.module.css'
-import PLUS from '../../assets/plus.webp'
-import ARROW from '../../assets/arrow-down.webp'
-import Image from 'next/image'
 import { Accordion, AccordionItem } from '@nextui-org/accordion'
+import { IoIosArrowDown } from "react-icons/io";
+import { MdArrowForwardIos } from "react-icons/md";
 import Link from 'next/link'
 
 export default function Faq() {
 
-    const iconArrow = () => { return <Image src={ARROW} alt='arrow' width={30} height={30} className={s.iconFaq}/>}
-    const iconPlus = () => { return <Image src={PLUS} alt='arrow' width={30} height={30} className={s.iconFaq}/>}
+    const iconArrow = () => { return <MdArrowForwardIos color="#56BBF1" size={20}  />}
+    const iconPlus = () => { return <IoIosArrowDown color="#56BBF1" size={20}  />}
     const title = (index: number) => { return <h4 className={s.faqHeaderH5}>{faqs[index].question}</h4>}
 
     const faqs = [
