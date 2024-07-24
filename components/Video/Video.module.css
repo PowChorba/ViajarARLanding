@@ -1,0 +1,13 @@
+.video {
+    margin: 20px auto;
+    border: 3px solid #56BBF1;
+    border-radius: 20px;
+    width: 65%;
+    box-shadow: 10px 10px 13px -6px rgba(0,0,0,0.73);
+}
+
+@media (max-width: 767px) { 
+    .video {
+        display: none;
+    }
+}

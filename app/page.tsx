@@ -9,6 +9,7 @@ import Carrousel from "@/components/Carrousel/Carrousel";
 import Faq from "@/components/Faq/Faq";
 import Suscription from "@/components/Suscription/Suscription";
 import Footer from "@/components/Footer/Footer";
+import Video from "@/components/Video/Video";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <main className={s.container}>
         <Hero/>
         <Details/>
+        <Video/>
         <Carrousel/>
         <Benefits/>
         <Suscription/>
