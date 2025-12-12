@@ -9,7 +9,10 @@ import { AiFillTikTok } from "react-icons/ai";
 export default function Footer(){
     return(
         <footer className={s.container}>
-            <Image src={LOGO} alt='Logo' width={300} height={135} className={s.logo}/>
+            <div>
+                <Image src={LOGO} alt='Logo' width={300} height={135} className={s.logo}/>
+                <p>© 2025 ViajAR — Developed and operated by Cumulus Tech S.A.S.</p>
+            </div>
             <div className={s.content}>
                 <h4>Contacto</h4>
                 <div>
