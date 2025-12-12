@@ -7,6 +7,10 @@
     padding: 75px 0px;
 }
 
+.container > div > p {
+   color: white; 
+}
+
 .content {
     display: flex;
     flex-direction: column;
