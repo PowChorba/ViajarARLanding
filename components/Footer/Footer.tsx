@@ -12,7 +12,7 @@ export default function Footer(){
             <div>
                 <Image src={LOGO} alt='Logo' width={300} height={135} className={s.logo}/>
                 <p>© 2025 ViajAR — Developed and operated by Cumulus Tech S.A.S.</p>
-                <p>Politicas de privacida</p>
+                <Link href='/privacy' className={s.privacy}>Política de Privacidad</Link>
             </div>
             <div className={s.content}>
                 <h4>Contacto</h4>
