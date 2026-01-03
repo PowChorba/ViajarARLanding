@@ -26,7 +26,7 @@ export default function Hero(){
                             height={135}
                         />
                         </Link>
-                        <Link href="#suscribirse" className="subscribeBtn">
+                        <Link href="https://play.google.com/store/apps/details?id=com.viajar.app" className="subscribeBtn">
                         <Image
                         className={s.playstore}
                             src={GooglePlay} // or svg
