@@ -55,6 +55,12 @@
     display: none;
 }
 
+.stores {
+    display: flex;
+    gap: 15px;
+}
+
+
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {    
     .container { 
@@ -205,6 +211,16 @@
         width: 100%;
         display: block;
         /* border-radius: 10px; */
+    }
+
+    .appstore {
+        width: 100px !important;
+        height: auto !important;
+    }
+
+    .playstore {
+        width: 110px !important;
+        height: auto !important;
     }
 
 }
