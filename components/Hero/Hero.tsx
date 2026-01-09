@@ -17,7 +17,7 @@ export default function Hero(){
                     {/* <button><Link href='#suscribirse'>Suscribirme</Link></button> */}
                     <div className={s.stores}>
                         
-                        <Link href="#suscribirse" className="subscribeBtn">
+                        <Link href="https://apps.apple.com/us/app/viajar/id6742166915" className="subscribeBtn">
                         <Image
                             className={s.appstore}
                             src={Appstore} // or svg
