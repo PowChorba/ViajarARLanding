@@ -110,8 +110,8 @@ export default function Suscription(){
     return(
         <form id="suscribirse" className={s.container}>
             <ToastContainer />
-            <h2 className={s.title}>Sé el primero en enterarte del <span>lanzamiento</span></h2>
-            <h5 className={s.subTitle}>Suscribite a nuestra lista de espera y recibí notificaciones inmediatas en cuanto la App esté disponible. <strong>¡No te pierdas ninguna novedad!</strong></h5>
+            <h2 className={s.title}>Mantenete al día con ViajAR 🚗✨</h2>
+            <h5 className={s.subTitle}>Recibí novedades, actualizaciones y mejoras de la app directamente en tu correo.</h5>
             <div className={s.input}>
                 <Input
                     key='asd1'
