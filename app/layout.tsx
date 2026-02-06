@@ -22,6 +22,7 @@ export default function RootLayout({
     <html lang="en">
       {/* <meta name="viewport" content="width=device-width, initial-scale=1.0"/> */}
       <head>
+        <meta name="google-site-verification" content="LVqCNcFkPlJZfyvF_dseFKm1eY5mCMeW8B1cKHZEx3c" />
       <Script
           id="meta-pixel"
           strategy="afterInteractive"
